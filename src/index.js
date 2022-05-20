@@ -53,13 +53,13 @@ function renderTable() {
 function handleClick(e) {
     const cellsArr = Array.from(cells)
     
-    if (e.target.innerText === "Start") {
+    if (e.target.innerText === "START") {
         console.log("cells", cells)
         cellsArr.map(c => c.addEventListener("mouseover", handleHover))
-        e.target.innerText = "Stop"
-    } else if (e.target.innerText === "Stop") {
+        e.target.innerText = "STOP"
+    } else if (e.target.innerText === "STOP") {
         cellsArr.map(c => c.removeEventListener("mouseover", handleHover))
-        e.target.innerText = "Start"
+        e.target.innerText = "START"
     }
 }
 
