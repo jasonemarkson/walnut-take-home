@@ -1,29 +1,16 @@
 const div = document.createElement("div")
 div.id = "table-div"
 const startBttn = document.getElementById("start-bttn")
+const resetBttn = document.getElementById("reset-bttn")
 const cells = document.getElementsByTagName("td")
 const table = `
 <table>
     <tr>
-        <td class="a"></td>
-        <td class="b"></td>
-        <td class="b"></td>
-        <td class="b"></td>
-        <td class="b"></td>
-    </tr>
-    <tr>
-        <td class="b"></td>
-        <td class="a"></td>
-        <td class="b"></td>
-        <td class="b"></td>
-        <td class="b"></td>
-    </tr>
-    <tr>
         <td class="b"></td>
         <td class="b"></td>
         <td class="a"></td>
-        <td class="b"></td>
-        <td class="b"></td>
+        <td class="a"></td>
+        <td class="a"></td>
     </tr>
     <tr>
         <td class="b"></td>
@@ -36,8 +23,22 @@ const table = `
         <td class="b"></td>
         <td class="b"></td>
         <td class="b"></td>
+        <td class="a"></td>
+        <td class="b"></td>
+    </tr>
+    <tr>
         <td class="b"></td>
         <td class="a"></td>
+        <td class="b"></td>
+        <td class="a"></td>
+        <td class="b"></td>
+    </tr>
+    <tr>
+        <td class="b"></td>
+        <td class="b"></td>
+        <td class="a"></td>
+        <td class="b"></td>
+        <td class="b"></td>
     </tr>
 </table>
 `
@@ -50,7 +51,6 @@ function renderTable() {
 }
 
 function handleClick(e) {
-    // debugger; 
     const cellsArr = Array.from(cells)
     
     if (e.target.innerText === "Start") {
@@ -70,6 +70,7 @@ function handleHover(e) {
         e.target.style.backgroundColor = "rgb(21, 115, 215)"
     }
 }
+
 renderTable();
 
 
