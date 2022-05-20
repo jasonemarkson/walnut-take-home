@@ -2,11 +2,22 @@ table {
     border-collapse: collapse;
 }
 
-table td {
+.a {
+    border: 1px solid black;
+    padding: 10px 15px;
+    background-color: rgb(21, 115, 215);
+}
+
+/* .a:hover {
+    background-color: white;
+} */
+
+.b {
     border: 1px solid black;
     padding: 10px 15px;
 }
 
-table td:hover {
+/* .b:hover {
     background-color: rgb(21, 115, 215);
-}
+} */
+
