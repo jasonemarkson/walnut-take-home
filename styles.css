@@ -1,0 +1,12 @@
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+table td:hover {
+    background-color: rgb(21, 115, 215);
+}
